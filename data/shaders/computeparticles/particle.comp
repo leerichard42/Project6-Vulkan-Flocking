@@ -94,7 +94,7 @@ void main()
 		vVel += cohesion * ubo.rule1Scale + separation * ubo.rule2Scale + alignment * ubo.rule3Scale;
 
 		// clamp velocity for a more pleasing simulation.
-		vVel = normalize(vVel) * clamp(length(vVel), 0.0, 0.1);
+		vVel = normalize(vVel) * clamp(length(vVel), 0.0, 0.06);
 
 		// kinematic update
 		vPos += vVel * ubo.deltaT;
