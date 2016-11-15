@@ -82,7 +82,7 @@ void main()
 			}
 			// Rule 3: boids try to match the speed of surrounding boids
 			if (distance < ubo.rule3Distance) {
-				alignment += vVel;
+				alignment += particlesA[i].vel.xy;
 			}
 		}
 
@@ -94,7 +94,7 @@ void main()
 		vVel += cohesion * ubo.rule1Scale + separation * ubo.rule2Scale + alignment * ubo.rule3Scale;
 
 		// clamp velocity for a more pleasing simulation.
-		vVel = normalize(vVel) * clamp(length(vVel), 0.0, 0.06);
+		vVel = normalize(vVel) * clamp(length(vVel), 0.0, 0.1);
 
 		// kinematic update
 		vPos += vVel * ubo.deltaT;

@@ -821,7 +821,7 @@ void VulkanExampleBase::handleMessages(HWND hWnd, UINT uMsg, WPARAM wParam, LPAR
 	case WM_KEYDOWN:
 		switch (wParam)
 		{
-		case KEY_P:
+		case KEY_F2:
 			paused = !paused;
 			break;
 		case KEY_F1:

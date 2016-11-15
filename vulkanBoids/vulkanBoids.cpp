@@ -33,12 +33,12 @@
 // LOOK: constants for the boids algorithm. These will be passed to the GPU compute part of the assignment
 // using a Uniform Buffer. These parameters should yield a stable and pleasing simulation for an
 // implementation based off the code here: http://studio.sketchpad.cc/sp/pad/view/ro.9cbgCRcgbPOI6/rev.23
-#define RULE1DISTANCE 0.15f // cohesion
-#define RULE2DISTANCE 0.15f // separation
-#define RULE3DISTANCE 0.2f // alignment
-#define RULE1SCALE 0.01f
-#define RULE2SCALE 0.04f
-#define RULE3SCALE 0.15f
+#define RULE1DISTANCE 0.07f // cohesion
+#define RULE2DISTANCE 0.05f // separation
+#define RULE3DISTANCE 0.03f // alignment
+#define RULE1SCALE 0.02f
+#define RULE2SCALE 0.03f
+#define RULE3SCALE 0.005f
 
 class VulkanExample : public VulkanExampleBase
 {
